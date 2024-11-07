@@ -1,0 +1,21 @@
+//hide checkbox and radio button
+
+.form-check-input[type="checkbox"] {
+  visibility: hidden;
+}
+input[type="checkbox"] {
+  visibility: hidden !important;
+}
+input[type="radio"] {
+  visibility: hidden;
+}
+.form-check {
+  display: block;
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+button[type="button"] {
+  background-color: lightgrey;
+  color: black;
+  border: 1px solid lightgrey;
+}
