@@ -27,7 +27,6 @@
     position: absolute;
     right: 8px;
     top: 12px;
-    /* transform: translateY(-50%); */
     color: #6c757d;
     pointer-events: none;
 }

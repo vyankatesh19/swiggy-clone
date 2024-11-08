@@ -13,16 +13,6 @@ const Banner = () => {
         </p>
       </div>
     </div>
-
-    
-    // <div className="d-flex align-items-center justify-content-center text-center banner-container">
-    //   <h1 className="text-white display-4 fw-bold mb-3">
-    //     What are your favorite cuisines?
-    //   </h1>
-    //   <p className="text-uppercase text-white my-3 fs-5">
-    //     Personalize your experience
-    //   </p>
-    // </div>
   );
 };
 

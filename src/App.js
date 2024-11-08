@@ -9,14 +9,14 @@ import "./App.css";
 function App() {
   return (
     <AppContextProvider>
-      <div className="container-fluid">
+      <div className="container-fluid app-container">
         <Header />
         <Banner />
         <FilterSortGrid />
         <Cards />
         <Footer />
       </div>
-    </AppContextProvider>
+      </AppContextProvider>
   );
 }
 

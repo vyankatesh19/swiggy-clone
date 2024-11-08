@@ -1,14 +1,14 @@
+
 button[type="button"] {
-  background-color: lightgrey;
-  color: black;
-  border: 1px solid lightgrey;
+  border-radius: 18px;
+  border: 1px solid rgba(2, 6, 12, 0.15);
+  padding: 6px 10px;
+  width: max-content;
+  grid-auto-flow: column;
+  box-shadow: rgb(253 101 8 / 16%) 0px 2px 12px;
+  transition: 100ms ease-in;
 }
 
-.area-list {
+.area-list { 
   height: 20rem;
-}
-
-.dropdown-item {
-  height: 20rem;
-  display: flex !important
 }
