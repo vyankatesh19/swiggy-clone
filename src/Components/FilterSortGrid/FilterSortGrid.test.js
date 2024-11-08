@@ -6,7 +6,7 @@ describe("renders filter section", () => {
   test("renders options and action buttons", () => {
     render(
       <AppContextProvider value={{ state: {}, setState: jest.fn() }}>
-        <FilterSortGrid />
+        <FilterSortGrid setIsLoading={jest.fn()} />
       </AppContextProvider>
     );
     expect(
