@@ -2,8 +2,11 @@ import Pagination from "react-bootstrap/Pagination";
 import { ITEMS_PER_PAGE } from "../../util/constant";
 import "./Pagination.css";
 
+// PaginationGrid component to render pagination controls for navigating through card pages
 const PaginationGrid = ({ totalCards, currentPage, setCurrentPage }) => {
+  // Calculate the total number of pages required based on total items and items per page
   const totalNoOfPages = Math.ceil(totalCards / ITEMS_PER_PAGE);
+  // Create an array of page numbers from 1 to totalNoOfPages
   const pageNumbersArray = Array.from(
     { length: totalNoOfPages },
     (_, i) => i + 1

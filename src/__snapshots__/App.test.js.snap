@@ -1,0 +1,300 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders app snapshot 1`] = `
+<div>
+  <div
+    class="container-fluid app-container"
+  >
+    <div
+      class="container-fluid header-container"
+    >
+      <div
+        class="row justify-content-between"
+      >
+        <div
+          class="col-4"
+        >
+          <img
+            alt="Logo"
+            class="logo"
+            src="swiggy-logo.png"
+          />
+        </div>
+        <div
+          class="col-4"
+        >
+          <form
+            class="d-flex ms-auto search-container"
+            role="search"
+          >
+            <input
+              aria-label="Search"
+              class="form-control"
+              placeholder="Search for restaurant and food"
+              type="search"
+            />
+            <i
+              class="fas fa-search search-icon"
+            />
+             
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid banner-container justify-content-center width-"
+    >
+      <div
+        class="row pt-5"
+      >
+        <h1
+          class="display-4 fw-bold my-3 w-64"
+        >
+          What are your favorite cuisines?
+        </h1>
+        <p
+          class=" my-3 fs-4 text-white"
+        >
+          Personalize your experience with swiggy...
+        </p>
+      </div>
+    </div>
+    <div
+      class="container mt-1"
+    >
+      <h2>
+        Restaurants with online food delivery
+      </h2>
+      <div
+        class="d-flex flex-wrap"
+      >
+        <div
+          class="m-1"
+        >
+          <button
+            class="btn btn-light"
+            type="button"
+          >
+            Filter
+          </button>
+        </div>
+        <div
+          class="m-1"
+        >
+          <div
+            class="mb-2 dropdown"
+          >
+            <button
+              aria-expanded="false"
+              class="dropdown-toggle btn btn-light"
+              id="sort-alphabet-dropdown"
+              type="button"
+            >
+              Sort by Alphabet
+            </button>
+          </div>
+        </div>
+        <div
+          class="m-1"
+        >
+          <div
+            class="mb-2 dropdown"
+          >
+            <button
+              aria-expanded="false"
+              class="dropdown-toggle btn btn-light"
+              id="rating-dropdown"
+              type="button"
+            >
+              Rating: Select
+            </button>
+          </div>
+        </div>
+        <div
+          class="m-1"
+        >
+          <button
+            class="btn btn-light"
+            type="button"
+          >
+            Fast Delivery
+          </button>
+        </div>
+        <div
+          class="m-1"
+        >
+          <button
+            class="btn btn-light"
+            type="button"
+          >
+            New On Swiggy
+          </button>
+        </div>
+        <div
+          class="m-1"
+        >
+          <button
+            class="btn btn-light"
+            type="button"
+          >
+            Pure Veg
+          </button>
+        </div>
+        <div
+          class="m-1"
+        >
+          <button
+            class="btn btn-light"
+            type="button"
+          >
+            Offers
+          </button>
+        </div>
+        <div
+          class="m-1"
+        >
+          <button
+            class="btn btn-light"
+            type="button"
+          >
+            Rs 300-600
+          </button>
+        </div>
+        <div
+          class="m-1"
+        >
+          <button
+            class="btn btn-light"
+            type="button"
+          >
+            Less than Rs 300
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container py-4"
+    >
+      <h2
+        class="mb-4"
+      >
+        <span
+          class="bold-underline"
+        >
+          Food Categories
+        </span>
+      </h2>
+      <div
+        class="row row-cols-1 row-cols-md-5 g-4"
+      />
+      <div
+        class="d-flex justify-content-center mt-3"
+      >
+        <ul
+          class="pagination"
+        >
+          <li
+            class="page-item"
+          >
+            <a
+              class="page-link"
+              href="#"
+              role="button"
+              tabindex="0"
+            >
+              <span
+                aria-hidden="true"
+              >
+                «
+              </span>
+              <span
+                class="visually-hidden"
+              >
+                First
+              </span>
+            </a>
+          </li>
+          <li
+            class="page-item disabled"
+          >
+            <span
+              class="page-link"
+            >
+              <span
+                aria-hidden="true"
+              >
+                ‹
+              </span>
+              <span
+                class="visually-hidden"
+              >
+                Previous
+              </span>
+            </span>
+          </li>
+          <li
+            class="page-item"
+          >
+            <a
+              class="page-link"
+              href="#"
+              role="button"
+              tabindex="0"
+            >
+              <span
+                aria-hidden="true"
+              >
+                ›
+              </span>
+              <span
+                class="visually-hidden"
+              >
+                Next
+              </span>
+            </a>
+          </li>
+          <li
+            class="page-item"
+          >
+            <a
+              class="page-link"
+              href="#"
+              role="button"
+              tabindex="0"
+            >
+              <span
+                aria-hidden="true"
+              >
+                »
+              </span>
+              <span
+                class="visually-hidden"
+              >
+                Last
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer
+      class="footer bg-black text-white text-center text-lg-start sticky-footer"
+    >
+      <div
+        class="footer-content"
+      >
+        <img
+          alt="Swiggy Logo"
+          class="footer-logo"
+          src="swiggy-white.png"
+        />
+        <div
+          class="text-center p-3"
+        >
+          © 2024 Swiggy Pvt Ltd
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+`;

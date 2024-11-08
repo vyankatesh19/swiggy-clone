@@ -5,7 +5,7 @@ import { appContext } from "../../GlobalContext";
 import FilterModal from "../FilterModal/FilterModal";
 import "./FilterSortGrid.css";
 
-const FilterSortGrid = () => {
+const FilterSortGrid = ({ isLoading, setIsLoading }) => {
   const [areaList, setAreaList] = useState(null);
   const [rating, setRating] = useState(null);
   const [, setFilter] = useState(null);
@@ -16,9 +16,12 @@ const FilterSortGrid = () => {
   const handleShow = () => setShow(true);
 
   useEffect(() => {
-    getDetails("list.php?a=list").then((data) => setAreaList(data.meals));
-  }, []);
+    getDetails("list.php?a=list", setIsLoading).then((data) =>
+      setAreaList(data.meals)
+    );
+  }, []);// Empty dependency array means this runs once when the component mounts
 
+  // Array of pre-defined filter buttons (Fast Delivery, Pure Veg, etc.)
   let filterButtons = [
     "Fast Delivery",
     "New On Swiggy",
@@ -37,6 +40,8 @@ const FilterSortGrid = () => {
             Filter
           </Button>
           <FilterModal
+            isLoading={isLoading}
+            setIsLoading={setIsLoading}
             areaList={areaList}
             show={show}
             handleClose={handleClose}

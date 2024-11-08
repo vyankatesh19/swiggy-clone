@@ -44,28 +44,28 @@ const FilterModal = (props) => {
           variant="primary"
           onClick={() => {
             areaString
-              ? getDetails(`filter.php?a=${areaString}`).then((data) => {
-                  setState({
-                    ...state,
-                    area: areaString,
-                    foodByArea: data.meals.map((item) => {
-                      return {
-                        ...item,
-                        rating: (
-                          Math.random() * (4.0 - 1.0 + 1.0) +
-                          1.0
-                        ).toFixed(2),
-                      };
-                    }),
-                    displayMeals: true,
-                  });
-                })
-              : setState({
+              ? getDetails(`filter.php?a=${areaString}`, props.setIsLoading).then((data) => {
+                setState({
                   ...state,
-                  foodByArea: [],
-                  displayMeals: false,
-                  area: null,
+                  area: areaString,
+                  foodByArea: data.meals.map((item) => {
+                    return {
+                      ...item,
+                      rating: (
+                        Math.random() * (4.0 - 1.0 + 1.0) +
+                        1.0
+                      ).toFixed(2),
+                    };
+                  }),
+                  displayMeals: true,
                 });
+              })
+              : setState({
+                ...state,
+                foodByArea: [],
+                displayMeals: false,
+                area: null,
+              });
             props.handleClose();
           }}
         >
