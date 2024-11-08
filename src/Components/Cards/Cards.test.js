@@ -32,7 +32,7 @@ describe("renders Cards", () => {
   test("renders card details", async () => {
     render(
       <AppContextProvider value={{ state: {} }}>
-        <Cards />
+        <Cards setIsLoading={jest.fn()} />
       </AppContextProvider>
     );
     await waitFor(() => {
