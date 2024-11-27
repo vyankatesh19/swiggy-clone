@@ -1,6 +1,5 @@
 # Details Of Food-Menu-App
 Deployed URL link : https://food-menu-app-vg.netlify.app
-Video Link : https://drive.google.com/file/d/1_on6a78RFnCCkLQ677RzQAwCcbAD6tav/view?usp=drive_link
 
 
 # Getting Started with Create React App
